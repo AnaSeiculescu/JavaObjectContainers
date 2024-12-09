@@ -1,8 +1,6 @@
 package collections.Sets;
 
-import java.util.ArrayList;
 import java.util.HashSet;
-import java.util.List;
 import java.util.Set;
 
 /**
@@ -28,10 +26,18 @@ public class App {
             forLoopRuns++;
         }
 
-        System.out.println("apple hashcode is: " + apple.hashCode());
-        System.out.println("cherry hashcode is: " + cherry.hashCode());
-        System.out.println("orange hashcode is: " + orange.hashCode());
 
+        Person pers1 = new Person("Zaharia ", 24);
+        Person pers2 = new Person("Bogdan", 35);
+        Person pers3 = new Person("Ion", 18);
+
+        Set<Person> set = new HashSet<>();
+
+        set.add(pers1);
+        set.add(pers2);
+        set.add(pers3);
+
+        System.out.println(set);
 
     }
 }
