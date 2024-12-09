@@ -2,6 +2,7 @@ package collections.Sets;
 
 import java.util.HashSet;
 import java.util.Set;
+import java.util.TreeSet;
 
 /**
  * Hello world!
@@ -28,10 +29,11 @@ public class App {
 
 
         Person pers1 = new Person("Zaharia ", 24);
-        Person pers2 = new Person("Bogdan", 35);
+        Person pers2 = new Person("Marius", 35);
         Person pers3 = new Person("Ion", 18);
 
-        Set<Person> set = new HashSet<>();
+        PersonComparator comparator = new PersonComparator();
+        TreeSet<Person> set = new TreeSet<>(comparator);
 
         set.add(pers1);
         set.add(pers2);
