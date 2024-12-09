@@ -32,8 +32,8 @@ public class App {
         Person pers2 = new Person("Marius", 35);
         Person pers3 = new Person("Ion", 18);
 
-        PersonComparator comparator = new PersonComparator();
-        TreeSet<Person> set = new TreeSet<>(comparator);
+//        PersonComparator comparator = new PersonComparator();
+        TreeSet<Person> set = new TreeSet<>();
 
         set.add(pers1);
         set.add(pers2);
